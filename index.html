@@ -1,75 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- CSS -->
+   <!-- CSS -->
 
-    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="style.css">
 
+<!-- BOOTSTRAP -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 
-    <!-- Titulo -->
-    <title>GIMNASIA Y ESGRIMA DE LOMAS DE ZAMORA</title>
-    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+   <!-- Titulo -->
+   <title>GIMNASIA Y ESGRIMA DE LOMAS DE ZAMORA</title>
 
 </head>
 <body>
 <header>  
-     <!-- LOGO QUE LLEVA AL INICIO -->
-    <a href="index.html">
-     <img src="assets/th.jpeg" alt="imagen">
-     </a>
-     
-      <!-- Listado de paginas -->
- <div class="header_content"    
-    <nav>  
-    <ul>
-      <li> <a href="mi_perfil.html">Mi perfil</a></li>
-      <li> <a href="fixtures.html">fixtures</a> </li>
-      <li> <a href="categorias.html">categorias</a></li>
-      <li> <a href="historia.html">historia</a> </li>
-      <li> <a href="contactos.html">contactos </a></li>
-   </ul>
-  </nav>
+   <!-- LOGO QUE LLEVA AL INICIO -->
+   <a href="index.html">
+   <img src="assets/WhatsApp Image 2025-03-13 at 13.10.52_33b66c10.png" class="logo.lomas" alt="logo">
+   </a>
+   
+   <nav class="nav-custom d-flex justify-content-center flex-wrap">
+      <a href="mi_perfil.html" class="nav-item">
+         <i class="bi bi-person-fill"></i>
+         <span class="nav-text">Mi perfil</span>
+      </a>
+      <a href="fixtures.html" class="nav-item">
+         <i class="bi bi-calendar-event"></i>
+         <span class="nav-text">fixtures</span>
+      </a>
+      <a href="historia.html" class="nav-item">
+         <i class="bi bi-book-half"></i>
+         <span class="nav-text">historia</span>
+      </a>
+      <a href="contactos.html" class="nav-item">
+         <i class="bi bi-envelope-fill"></i>
+         <span class="nav-text">contactos</span>
+      </a>
+   </nav>
+   
 
-<!-- Titulo -->
-  <h1 class="titulo_principal">GIMNASIA Y ESGRIMA DE LOMAS DE ZAMORA</h1>
 </div>
-  
 </header>
 
- <main> 
-<!-- Noticia 1 -->
-<section class="noticias">
-   <div class="articulo1">
-      <h2>Todo lo que tenes que saber previo al inicio de la temporada </h2>
-      <h3>Previo a la temporada regular, te dejamos algunas recomendaciones para arrancar con el pie derecho.</h3>
-      <p>Si es tu primera vez en Lomas, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac odio tincidunt, egestas mauris at, aliquam lorem. Pellentesque quis lobortis tortor, non pretium justo. Quisque non ullamcorper justo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque congue tellus ac dui varius vehicula. Suspendisse imperdiet justo non nisi consectetur egestas. Nullam egestas arcu in urna dignissim laoreet. Duis vel leo fringilla, posuere tellus quis, porttitor odio. Nam aliquet semper purus, quis laoreet orci interdum vel</p>
+<main> 
 
-    </div>
+<!-- BIENVENIDA -->
+   <section class="bienvenida">
+<h1 id="h1bienvenida"> Te damos la bienvenida al canal oficial de Gimnasia y Esgrima de lomas de Zamora</h1>
+<h2 id="h2bienvenida"> Aquí podras ver toda la informacion necesaria sobre tu equipo del club</h2>
 
-<!-- Noticia 2 -->
-   <div class="articulo2">
-      <h2>Pretemporada: dias y horarios de entrenamiento </h2>
-      <h3>Conoce todos tus horarios dependiendo tu categoria</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac odio tincidunt, egestas mauris at, aliquam lorem. Pellentesque quis lobortis tortor, non pretium justo. Quisque non ullamcorper justo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque congue tellus ac dui varius vehicula. Suspendisse imperdiet justo non nisi consectetur egestas. Nullam egestas arcu in urna dignissim laoreet. Duis vel leo fringilla, posuere tellus quis, porttitor odio. Nam aliquet semper purus, quis laoreet orci interdum vel.</p>
-
+</div>
+<!-- Carrousel de fotos -->
+<section class="carrouselindex">
+   <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+      <div class="carousel-item active">
+         <img src="assets/flexa.jpg" class="d-block w-100 img-fluid" style="max-height: 400px; object-fit: cover;" alt="..."> alt="...">
+      </div>
+      <div class="carousel-item">
+         <img src="assets/fotochiquitos.jpg" class="d-block w-100 img-fluid" style="max-height: 400px; object-fit: cover;" alt="..."> alt="...">
+      </div>
+      <div class="carousel-item">
+         <img src="assets/foto3x3.jpg" class="d-block w-100 img-fluid" style="max-height: 400px; object-fit: cover;" alt="..."> alt="...">
+      </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+      </button>
    </div>
 </section>
-
-
 
 </main>
 
 <footer>
- <ul>
-    <li>Salguero 64, Lomas de Zamora</li>
-    <li>42428794</li>
-    <li>Republica Argentina</li>
- </ul>
+   <ul>
+      <li> 📍 Salguero 64, Lomas de Zamora</li>
+      <li> 📞42428794</li>
+      <li> 🌎 Republica Argentina</li>
+   </ul>
 
 </footer>
-    
+<!-- JS BOOTSTRAP -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

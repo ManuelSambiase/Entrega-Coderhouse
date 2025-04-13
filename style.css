@@ -19,29 +19,45 @@ header {
     background-color: #003092;
     color: #FFAB5B;
     display: flex;
+    font-family: 'Raleway', sans-serif
 }
 
-header h1 {
-margin-left: 400px;
-margin: 100px;
-
+header img{
+    width:70px; 
+    height: 10x;
+    padding: 0;
 }
 
-.header_content{
+/* NAV BAR  */
+
+.nav-item {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    color: #ffa500; 
+    text-decoration: none;
+    color: inherit;
+    padding: 10px 30;
+    margin: 0 10px;
+    font-size: 25px;
 }
-
-header ul{  
-    
-    font-size: larger;
-    font-weight: bolder;
-    list-style: none; 
-    padding: 15px; 
-    margin left:  85px; 
-    display: flex; 
-    gap: 100px
-    
+.nav-item:hover {
+    color: white;
+}
+.nav-text {
+    display: inline; 
+    font-size: 26px;
+}
+.nav-custom {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 40px;
+    padding: 0 40px;
+    background-color: #002f86; 
 }
 /* FOOTER GENERAL  */
 footer {
@@ -52,8 +68,12 @@ footer {
     display: flex;   
     align-items: flex-end;
     text-align: left;
-    background-color: #003092;
-    position: fixed
+    background-color: #001f5b;
+    position: fixed;
+    color: white;
+    padding: 8px 10px;
+    font-size: 0.8rem;
+    box-sizing: border-box;
 }
 
 footer ul{
@@ -62,9 +82,33 @@ footer ul{
     font-size: larger;
     font-weight: bold;
     list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    box-sizing: border-box;
     display: flex;
-    margin left:  40px;
-    gap: 100px
+    font-weight: bold;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+footer li {
+    margin: 5px 10px;
+    flex: 1 1 auto;
+    text-align: center; 
+    padding: 5px;
+    min-width: 100px;}
+
+/* INDEX */
+.carrouselindex{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.carrousel-img{
+    height: 600px;
 }
 
 /* MI PERFIL */
@@ -93,29 +137,8 @@ height: auto;
     height: 300px;
 }
 
-/* CATEGORIAS */
-.horarios{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-margin: o auto;
-width: 100%;
-}
 
-/* FIXTURES */
-.categorias{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    width: 100%;
-    height: 100vh;
-    border: 1px solid red;
-    margin-bottom: 50px;
-}
-/* GRID */
+/* GRID FIXTURE*/
 .fixture {
 display: grid;
 grid-template-areas: 
@@ -132,20 +155,20 @@ justify-content: center;
 border: solid black 2px;
 }
 
-.horatitulo, .visitantetitulo, .localtitulo, .fechatitulo {
-font-size: xx-large;
+.headerfecha .headerhora, .headerlocal, .headervisitante {
+font-size: larger;
 
 }
 
-.fechatitulo{grid-area: fechatitulo;}
-.horatitulo{grid-area: horatitulo;}
-.localtitulo{grid-area: localtitulo;}
-.visitantetitulo{grid-area: visitantetitulo;}
+.headerhora{grid-area: fechatitulo;}
+.headerfecha{grid-area: horatitulo;}
+.headerlocal{grid-area: localtitulo;}
+.headervisitante{grid-area: visitantetitulo;}
 .gimnasia{grid-area: gimnasia;}
 .gimnasia2{grid-area: gimnasia2;}
 .gimnasia3{grid-area: gimnasia3;}
 .hora1{grid-area: hora1;}
-.hora2{grid-area: hora2;}
+.hora2{grid-area: hora2;}s
 .hora3{grid-area: hora3;}
 .local1{grid-area: local1;}
 .visitante2{grid-area: visitante2;}
@@ -153,6 +176,8 @@ font-size: xx-large;
 .fecha1{grid-area: fecha1;}
 .fecha2{grid-area: fecha2;}
 .fecha3{grid-area: fecha3;}
+
+
 /* HISTORIA */
 
 .historia{
@@ -183,6 +208,84 @@ font-size: xx-large;
 
 .articulo2 {
     text-align: right;
-    padding: 10pxc
+    padding: 10pxc}
 
+
+
+
+    /* MEDIA QUARIES */
+
+
+@media (max-width: 480px) {
+
+    /* FOOTER GENERAL RESPONSIVE */
+
+    footer li, footer p {
+        margin: 4px 6px;
+        min-width: 70px;
+        font-size: 0.15rem;
+    }
+
+    footer {
+        padding: 15px 10px;
+        font-size: 0.15rem;
+        padding: 3px 5px;
+    }
+    footer ul {
+        flex-direction: column;
+        gap: 2px;
+        font-size: 0.15rem;
+    }
+
+    /*  INDEX RESPONSIVE */
+        .titulo_principal {
+        font-size: 1.5rem;
+        }
     
+        #h1bienvenida {
+        font-size: 1.2rem;
+        }
+    
+        #h2bienvenida {
+        font-size: 0.9rem;
+        }
+    }
+
+@media (max-width: 767px) {
+/* NAV RESPONSIVE */
+    .nav-item {
+    flex-direction: column;
+    gap: 0;
+        }
+    
+    .nav-text {
+        display: none; 
+        }
+    
+    .nav-custom {
+        justify-content: center;
+        padding: 10px;
+        gap: 15px;
+    }
+
+    /* FIXTURES RESPONSIVE */
+    .fixture {
+        grid-template-columns: 1fr;
+    }
+    
+    .header {
+        display: none; /* opcional si no querés mostrar títulos */
+    }
+    
+    .item {
+        text-align: left;
+        padding: 5px 0;
+        border-bottom: 1px solid #ccc;
+    }
+    
+    .fixture > div:nth-child(4n + 1)::before { content: "Fecha: "; font-weight: bold; }
+    .fixture > div:nth-child(4n + 2)::before { content: "Hora: "; font-weight: bold; }
+    .fixture > div:nth-child(4n + 3)::before { content: "Local: "; font-weight: bold; }
+    .fixture > div:nth-child(4n + 4)::before { content: "Visitante: "; font-weight: bold; }
+    
+    }
