@@ -4,9 +4,10 @@ padding: 0;
 box-sizing: border-box;
 }
 
-body {
+html, body {
 
     height: 100%;
+    background-color: #FFF2DB;
 }
 
     main {
@@ -69,7 +70,7 @@ footer {
     align-items: flex-end;
     text-align: left;
     background-color: #001f5b;
-    position: fixed;
+    position: end;
     color: white;
     padding: 8px 10px;
     font-size: 0.8rem;
@@ -178,7 +179,7 @@ font-size: larger;
 .fecha3{grid-area: fecha3;}
 
 
-/* HISTORIA */
+/* NOTICIAS */
 
 .historia{
     display: flex;
@@ -195,7 +196,6 @@ font-size: larger;
     text-align: right;
 }
 
-/* PAGINA PRINCIPAL */
 .noticias {
     display: flex;
     flex-direction: column;
@@ -210,8 +210,26 @@ font-size: larger;
     text-align: right;
     padding: 10pxc}
 
+/* CONTACTO */
+.numeros{
+justify-content: center;
+align-items: center;
+display: flex;
+flex-direction: column;
+text-align: center;
+}
+.numeros body{ 
+    background-color: #FFAB5B;
+}
+.accordion {
+    margin-bottom: 50px; 
+    min-height: 100vh;
+    padding-top: 10px;
+}
 
-
+.container {
+    padding top: 20px;
+}
 
     /* MEDIA QUARIES */
 
