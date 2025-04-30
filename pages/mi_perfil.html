@@ -1,81 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Mi Perfil</title>
-   
-<!-- CSS -->
-<link rel="stylesheet" href="../css/style.css">
 
-   
+   <!-- CSS -->
+   <link rel="stylesheet" href="../css/style.css">
+
+
    <!-- BOOTSTRAP -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
-<!-- Titulo -->
-<title>GIMNASIA Y ESGRIMA DE LOMAS DE ZAMORA</title>
-   
+   <!-- Titulo -->
+   <title>GIMNASIA Y ESGRIMA DE LOMAS DE ZAMORA</title>
+
 </head>
 
 <body>
    <header>
-   <!-- LOGO QUE LLEVA AL INICIO -->
-   <a href="../index.html">
-      <img src="../assets/logo-lomas.png.jpg" class="logo-lomas" alt="Logo">
-   </a>
-   
-      
+      <!-- LOGO QUE LLEVA AL INICIO -->
+      <a href="../index.html">
+         <img src="../assets/logo-lomas.png" class="logo-lomas" alt="Logo">
+      </a>
+
+
       <nav class="nav-custom d-flex justify-content-center flex-wrap">
          <a href="mi_perfil.html" class="nav-item">
             <i class="bi bi-person-fill"></i>
             <span class="nav-text">Mi perfil</span>
          </a>
-         <a href="fixtures.html" class="nav-item">
+         <a href="productos.html" class="nav-item">
             <i class="bi bi-calendar-event"></i>
-            <span class="nav-text">fixtures</span>
+            <span class="nav-text">Productos</span>
          </a>
          <a href="noticias.html" class="nav-item">
             <i class="bi bi-book-half"></i>
-            <span class="nav-text">historia</span>
+            <span class="nav-text">Noticias</span>
          </a>
          <a href="contactos.html" class="nav-item">
             <i class="bi bi-envelope-fill"></i>
-            <span class="nav-text">contactos</span>
-         </a>
-         <a href="../index.html" class="nav-item">
-            <i class="bi bi-house-fill"></i>
-            <span class="nav-text">Inicio</span>
+            <span class="nav-text">Contactos</span>
          </a>
       </nav>
-      
+
+      <!-- Íconos de redes sociales fijos -->
+      <div class="redes-sociales">
+         <a href="https://www.instagram.com/gyelomasbasquet/" target="_blank" data-bs-toggle="tooltip"
+            data-bs-placement="left" title="Link a nuestro Instagram">
+            <i class="bi bi-instagram"></i>
+         </a>
+         <a href="https://www.facebook.com/Gimnasia-y-Esgrima-de-Lomas-de-Zamora-100028152895814/" target="_blank"
+            data-bs-toggle="tooltip" data-bs-placement="left" title="Link a nuestro Facebook">
+            <i class="bi bi-facebook"></i>
+         </a>
+      </div>
+
+
    </header>
 
-   <main>\
+   <main>
 
-   <div class="mi_perfil">
-   
-   <!-- Foto de Perfil -->
-   <img src="../assets/foto de perfil.jpg" alt="fotoperfil">
+      <section class="infomiperfil">
+         <div class="columna-izquierda">
+            <img src="../assets/foto de perfil.jpg" alt="fotoperfil" class="img-perfil">
+            <p class="tipo-perfil">Jugador</p>
+         </div>
 
-   <!-- Descripcion -->
+         <div class="columna-derecha">
+            <h1 class="titulo-seccion">Descripcion </h1>
+            <textarea name="" id="Descripcion"></textarea>
+         </div>
+      </section>
 
-   <h1> Descripcion </h1>
-   <textarea name="" id="Descipcion"></textarea>
 
-   </div>
+      <!-- Galeria de fotos -->
+
+      <section class="container my-5">
+         <h2 class="titulo-seccion">Mis fotos</h2>
+
+         <!-- Simulación subida de foto -->
+         <div class="text-center mb-4">
+            <label for="input-foto" class="btn btn-warning fw-bold">
+               📸 Subir nueva foto
+            </label>
+            <input type="file" id="input-foto" class="d-none" disabled>
+         </div>
+
+         <!-- Galería de imágenes -->
+         <div class="row g-4 justify-content-center">
+            <div class="col-10 col-sm-6 col-md-4">
+               <img src="../assets/fotoperfil1.jpg" class="img-fluid rounded shadow" alt="Foto 1">
+            </div>
+            <div class="col-10 col-sm-6 col-md-4">
+               <img src="../assets/fotoperfil2.jpg" class="img-fluid rounded shadow" alt="Foto 2">
+            </div>
+            <div class="col-10 col-sm-6 col-md-4">
+               <img src="../assets/fotoperfil3.jpg" class="img-fluid rounded shadow" alt="Foto 3">
+            </div>
+         </div>
+      </section>
+
+      <!-- INFORMACION DE JUGADOR -->
+      <section class="proximos-partidos">
+         <h3 class="titulo-seccion">Proximos partidos</h3>
+         <div class="grid-partidos">
+            <div class="grid-header">Fecha</div>
+            <div class="grid-header">Hora</div>
+            <div class="grid-header">Club Local</div>
+            <div class="grid-header">Club Visitante</div>
+
+            <!-- Partido 1 - G y E local -->
+            <div>30/04/2025</div>
+            <div>18:00</div>
+            <div>
+               <a href="https://maps.google.com/?q=Salguero 64, Lomas de Zamora" target="_blank">
+                  Gimnasia y Esgrima
+               </a>
+            </div>
+            <div>
+               <a href="https://maps.google.com/?q=Avenida del Libertador 7395, CABA" target="_blank">
+                  Obras Club
+               </a>
+            </div>
+
+            <!-- Partido 2 - G y E visitante -->
+            <div>07/05/2025</div>
+            <div>20:00</div>
+            <div>
+               <a href="https://maps.google.com/?q=Arzobispo Espinoza 550, CABA" target="_blank">
+                  Boca Juniors
+               </a>
+            </div>
+            <div>
+               <a href="https://maps.google.com/?q=Salguero 64, Lomas de Zamora" target="_blank">
+                  Gimnasia y Esgrima
+               </a>
+            </div>
+
+            <!-- Partido 3 - G y E local -->
+            <div>14/05/2025</div>
+            <div>19:30</div>
+            <div>
+               <a href="https://maps.google.com/?q=Salguero 64, Lomas de Zamora" target="_blank">
+                  Gimnasia y Esgrima
+               </a>
+            </div>
+            <div>
+               <a href="https://maps.google.com/?q=Avenida del Libertador 7395, CABA" target="_blank">
+                  Obras Club
+               </a>
+            </div>
+
+            <!-- Partido 4 - G y E visitante -->
+            <div>21/05/2025</div>
+            <div>17:00</div>
+            <div>
+               <a href="https://maps.google.com/?q=Arzobispo Espinoza 550, CABA" target="_blank">
+                  Boca Juniors
+               </a>
+            </div>
+            <div>
+               <a href="https://maps.google.com/?q=Salguero 64, Lomas de Zamora" target="_blank">
+                  Gimnasia y Esgrima
+               </a>
+            </div>
+         </div>
+      </section>
 
    </main>
 
    <footer>
-   <ul>
-   <li>Salguero 64, Lomas de Zamora</li>
-   <li>42428794</li>
-   <li>Republica Argentina</li>
-   </ul>
-   
+      <ul>
+         <li> 📍 Salguero 64, Lomas de Zamora</li>
+         <li> 📞42428794</li>
+         <li> 🌎 Republica Argentina</li>
+      </ul>
    </footer>
+   <!-- JS BOOTSTRAP -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+   <script>
+      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+      const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+   </script>
 
 </body>
+
 </html>
