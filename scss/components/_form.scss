@@ -1,0 +1,38 @@
+.formulario-contacto {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    .campo-form {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+
+        label {
+            font-family: $fuente-principal;
+            color: $color-secundario;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        input,
+        textarea {
+            font-family: $fuente-principal;
+            padding: 10px;
+            border: 2px solid $color-principal;
+            border-radius: 8px;
+            font-size: 1rem;
+            resize: vertical;
+            background-color: #fffdf8;
+
+            &:focus {
+                outline: none;
+                border-color: $naranja-hover;
+                box-shadow: 0 0 0 2px rgba(255, 171, 91, 0.3);
+            }
+        }
+    }
+}

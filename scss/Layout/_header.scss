@@ -1,0 +1,28 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $color-secundario;
+    padding: 10px 40px;
+
+    img {
+        width: 70px;
+        height: auto;
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo-lomas {
+        max-width: 90px;
+        height: auto;
+        display: block;
+        margin: 10px auto;
+    }
+}

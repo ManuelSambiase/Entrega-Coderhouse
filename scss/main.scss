@@ -1,0 +1,26 @@
+// Import base
+@import 'base/reset';
+@import 'base/variables';
+@import 'base/global';
+@import 'base/mixins';
+
+
+// Import layout
+@import 'Layout/header';
+@import 'Layout/footer';
+@import 'Layout/navbar';
+
+// Import components
+@import 'components/buttons';
+@import 'components/form';
+@import 'components/social';
+@import 'components/formulario';
+
+
+// Import pages
+@import 'pages/index';
+@import 'pages/perfil';
+@import 'pages/productos';
+@import 'pages/contacto';
+@import 'pages/noticias';
+

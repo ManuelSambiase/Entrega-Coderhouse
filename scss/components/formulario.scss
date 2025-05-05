@@ -1,0 +1,68 @@
+.formulario-contacto {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    label {
+        font-family: $fuente-secundaria;
+        color: $color-principal;
+        font-weight: 600;
+        margin-bottom: 8px;
+    }
+
+    input,
+    textarea,
+    select {
+        font-family: $fuente-secundaria;
+        padding: 10px;
+        border: 2px solid;
+        border-radius: 8px;
+        font-size: 1rem;
+        resize: vertical;
+        background-color: #fffdf8;
+        margin-bottom: 15px;
+    }
+
+    .btn-enviar {
+        font-family: $fuente-secundaria;
+        background-color: $color-principal;
+        color: $color-titulos;
+        border: none;
+        padding: 12px 24px;
+        font-size: 1.1rem;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: lighten($color-principal, 5%);
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .formulario-contacto {
+        padding: 20px;
+        border-radius: 10px;
+
+        label {
+            font-size: 0.95rem;
+        }
+
+        input,
+        textarea,
+        select {
+            font-size: 0.95rem;
+            padding: 8px;
+        }
+
+        .btn-enviar {
+            width: 100%;
+            padding: 10px;
+            font-size: 1rem;
+        }
+    }
+}

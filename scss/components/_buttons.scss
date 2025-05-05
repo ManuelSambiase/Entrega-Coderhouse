@@ -1,0 +1,19 @@
+%btn-base {
+    font-family: $fuente-secundaria;
+    padding: 12px 24px;
+    font-size: 1.3rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-enviar {
+    @extend %btn-base;
+    background-color: $color-principal;
+    color: $color-titulos;
+    border: none;
+
+    &:hover {
+        background-color: lighten($color-principal, 5%);
+    }
+}

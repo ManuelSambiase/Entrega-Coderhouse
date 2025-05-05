@@ -787,7 +787,6 @@ textarea {
 /* Noticias */
 .noticias {
     padding: 20px;
-    /* reduce espacio general pero deja aire */
 }
 
 .noticia {
@@ -796,7 +795,6 @@ textarea {
     max-width: 100%;
     margin: 0 auto;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-    /* sombra más suave en mobile */
     border-radius: 10px;
 }
 
@@ -811,7 +809,7 @@ textarea {
 .noticia h5 {
     font-size: 1.1rem;
 }
-}
+
 
 /* Contacto */
 .info-contacto {
@@ -894,6 +892,4 @@ textarea {
         font-size: 0.9em;
 
     }
-}
-
 }
